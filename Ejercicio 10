@@ -1,0 +1,5 @@
+let palabra = prompt("Ingresa una palabra");
+
+let reverseString = (palabra) => palabra.split("").reverse().join("");
+
+alert(reverseString(palabra));
