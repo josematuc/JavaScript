@@ -1,0 +1,16 @@
+let frase = prompt("Ingresa una frase");
+
+let arrayIn = frase.split(" ");
+
+let max = 0;
+
+        for (let i = 0; i < arrayIn.length; i++) {
+
+                    if (max < arrayIn[i].length) {
+                        palMax = arrayIn[i];
+                        max = arrayIn[i].length;
+                    }
+        }
+
+alert(`La palabra mas larga de la frase es:
+${palMax}`);
