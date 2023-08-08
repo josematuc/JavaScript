@@ -1,0 +1,10 @@
+let ingreso = prompt("Ingresa tu edad");
+let edad = parseInt(ingreso);
+
+    if (edad < 0) {
+        alert("Tenes " + edad + " años, cumplís para atras?");
+    } else if (edad < 18 && edad >= 0) {
+        alert("No puedes ingresar, eres menor de edad.");
+    } else if (edad >= 18) {
+        alert("Eres mayor de edad, ingresa.");
+    }
