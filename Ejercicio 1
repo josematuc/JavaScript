@@ -1,0 +1,22 @@
+do {
+
+        var op = prompt(`como esta el día?
+        1- Nublado
+        2- Soleado
+        3- LLuvioso`)
+
+        var clima;
+
+                switch (op) {
+                    case "1" : clima = "nublado";
+                    break;
+                    case "2" : clima = "soleado";
+                    break;
+                    case "3" : clima = "lluvioso";
+                    break;
+                    default : alert("No es una opcion correcta, ingrese de nuevo");
+                }
+              
+} while (op != "1" && op != "2" && op != "3");       
+
+alert("El día de hoy esta " + clima + ".")
