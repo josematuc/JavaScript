@@ -1,0 +1,5 @@
+let nombre = "Jose";
+
+let tipoDato = (nombre) => typeof(nombre);
+
+console.log(tipoDato(nombre));
