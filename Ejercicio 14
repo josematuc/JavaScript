@@ -1,12 +1,36 @@
+//Constructor del objeto
 function crearLibros (ISBN, titulo, autor, paginas){
-    this.ISBN = ISBN;
-    this.titulo = titulo;
-    this.autor = autor;
-    this.paginas = paginas;   
+    this.ISBN = ISBN();
+    this.titulo = titulo();
+    this.autor = autor();
+    this.paginas = paginas();   
 }
 
-var libro1 = new crearLibros(prompt("Ingresa ISBN"), prompt("Titulo del libro"), prompt("autor"), prompt("cantidad de paginas"));
+//Se crea el objeto
+var libro1 = new crearLibros(ISBN, titulo, autor, paginas);
 
+//Muestra el objeto
 for (mostrar in libro1){
     console.log(`${mostrar} : ${libro1[mostrar]}`);
+    }
+
+    //Funciones para dar valor a propiedades
+    function ISBN(){
+        let valor = prompt("Ingrese el ISBN");
+        return valor
+    }
+
+    function titulo(){
+        let valor = prompt("Ingrese el título del libro");
+        return valor
+    }
+
+    function autor(){
+        let valor = prompt("Ingrese nombre del autor");
+        return valor
+    }
+
+    function paginas(){
+        let valor = prompt("Ingrese la cantidad de páginas");
+        return valor
     }
