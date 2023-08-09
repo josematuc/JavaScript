@@ -1,0 +1,10 @@
+let persona = new Object();
+    persona.nombre = "Jose Espeche";
+    persona.edad = 40;
+    persona.sexo = "M";
+    persona.peso = "85 kg"; 
+    persona.altura = "1.74 mts";
+
+    for (let mostrar in persona) {
+        console.log(`${mostrar} : ${persona[mostar]}`);
+    }
