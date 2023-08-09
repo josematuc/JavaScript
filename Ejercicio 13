@@ -6,5 +6,5 @@ let persona = new Object();
     persona.altura = "1.74 mts";
 
     for (let mostrar in persona) {
-        console.log(`${mostrar} : ${persona[mostar]}`);
+        console.log(`${mostrar} : ${persona[mostrar]}`);
     }
