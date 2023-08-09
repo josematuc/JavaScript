@@ -1,0 +1,12 @@
+function crearLibros (ISBN, titulo, autor, paginas){
+    this.ISBN = ISBN;
+    this.titulo = titulo;
+    this.autor = autor;
+    this.paginas = paginas;   
+}
+
+var libro1 = new crearLibros(prompt("Ingresa ISBN"), prompt("Titulo del libro"), prompt("autor"), prompt("cantidad de paginas"));
+
+for (mostrar in libro1){
+    console.log(`${mostrar} : ${libro1[mostrar]}`);
+    }
