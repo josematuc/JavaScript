@@ -1,0 +1,10 @@
+let vector1 = [];
+let vector2 = [];
+
+for (let i=0; i<5; i++) {
+    vector1[i] = Math.round(Math.random()*50);
+    vector2[i] = Math.round(Math.random()*50);
+}
+
+console.log(vector1);
+console.log(vector2);
