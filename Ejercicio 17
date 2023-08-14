@@ -1,0 +1,15 @@
+let frase = "me gusta comer mucha fruta";
+
+console.log(frase);
+
+let arr = frase.split(" ");
+
+console.log(arr)
+
+arr.splice(3,2)
+
+console.log(arr);
+
+let fraseNew = arr.join(" ")
+
+console.log(fraseNew);
