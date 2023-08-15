@@ -1,0 +1,27 @@
+var arr1 = [];
+var arr2 = [];
+
+for (let i=0; i<50; i++) {
+   arr1[i] = Math.round((Math.random()*100));
+}
+
+console.log("ARRAY 1 GENERARADO DE MANERA ALEATORIA")
+console.log(arr1);
+
+      arr1 = (arr1.sort(function(a, b) {
+         c = a - b;
+         return c}));
+
+ console.log("ARRAY 1 ORDENADO DE MENOR A MAYOR");  
+ console.log(arr1);
+
+ arr2 = arr1.slice(0,10);
+
+      for (let i=0; i<20; i++){
+         if (arr2[i] == undefined){
+            arr2[i] = 0.5;
+         }
+      }
+ 
+console.log("ARRAY 2 CUMPLIENDO LAS CONDICIONES")
+console.log(arr2)
