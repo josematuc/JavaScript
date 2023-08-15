@@ -1,0 +1,11 @@
+var valores = [true, 5, false, "hola", "adios", 2];
+var suma = 0;
+
+for (e of valores){
+
+   if (typeof(e) == "number")
+      suma = suma + e;
+
+}
+
+console.log(`La suma de los valores numéricos del array es ${suma}`);
