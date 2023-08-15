@@ -1,0 +1,7 @@
+var valores = [true, 5, false, "hola", "adios", 2];
+
+valores.forEach(function recorrer(elemento, indice, array) {
+      if (typeof(elemento) == "boolean")
+      console.log(`Indice ${indice} es un valor ${elemento}`);
+
+})
